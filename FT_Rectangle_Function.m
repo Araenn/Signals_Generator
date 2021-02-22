@@ -16,7 +16,7 @@ for k = 1:N
 end
 
 for k = 1:U %create a tab from 1 to U, in order to generate the Fourier Transform
-  X1(k) = T .* sinc(f(k) .* T); %pi included in the sinc function
+  X1(k) = T .* sinc(f(k) .* T); %pi is included in the sinc function
 end
 
 subplot(2,1,1);
