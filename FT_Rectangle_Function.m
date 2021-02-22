@@ -17,17 +17,17 @@ end
 
 for k = 1:U %create a tab from 1 to U, in order to generate the Fourier Transform
   X1(k) = T .* sinc(f(k) .* T); %pi included in the sinc function
-endfor
+end
 
 subplot(2,1,1);
-plot(t, x1)
+plot(t, x1) %plot the rectangle function depending to time
 title('Rectangle function')
 xlabel('t')
 ylabel('y')
 grid()
 
 subplot(2,1,2);
-plot(f, X1)
+plot(f, X1) %plot the Fourier transform of x1 depending to frequency
 title('Fourier transform')
 xlabel('f')
 ylabel('y')
