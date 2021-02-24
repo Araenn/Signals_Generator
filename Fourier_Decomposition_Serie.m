@@ -43,7 +43,7 @@ end
 subplot(2,1,1);
 plot(t, x, 'r')
 hold on
-plot(t, real(f1)) %real(x) allow to represent the real part of the function
+plot(t, real(f1)) %real(x) makes it possible to represent the real part of the function
 hold on
 plot(t, f2, 'g.')
 title('FDS of the rectangle function')
